@@ -2,7 +2,7 @@
 
 
 # RRule
-Kotlin implementation for handling iCalendar (RFC 5545) recurrence rules 
+Kotlin implementation for conveniently handling and modifying iCalendar (RFC 5545) recurrence rules.
 
 ## Dependency
 
