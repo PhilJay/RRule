@@ -15,7 +15,7 @@ allprojects {
 }
 
 dependencies {
-    implementation 'com.github.PhilJay:RRule:1.0.1'
+    implementation 'com.github.PhilJay:RRule:1.0.2'
 }
 ```
 
@@ -32,7 +32,7 @@ Or add the following to your **pom.xml**:
 <dependency>
     <groupId>com.github.PhilJay</groupId>
     <artifactId>RRule</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 </dependency>
 ```
 
@@ -47,5 +47,5 @@ val rrule = RRule("RRULE:FREQ=MONTHLY;INTERVAL=2;COUNT=10;BYDAY=1SU,-1SU")
 Transform RRule object to iCalendar RFC 5545 String:
 
 ```kotlin
-val rfc5545String = rrule.toRFC2445String()
+val rfc5545String = rrule.toRFC5545String()
 ```
