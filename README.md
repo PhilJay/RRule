@@ -15,7 +15,7 @@ allprojects {
 }
 
 dependencies {
-    implementation 'com.github.PhilJay:rrule:1.0.0'
+    implementation 'com.github.PhilJay:RRule:1.0.0'
 }
 ```
 
@@ -31,7 +31,7 @@ Or add the following to your **pom.xml**:
 
 <dependency>
     <groupId>com.github.PhilJay</groupId>
-    <artifactId>rrule</artifactId>
+    <artifactId>RRule</artifactId>
     <version>1.0.0</version>
 </dependency>
 ```
