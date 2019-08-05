@@ -23,8 +23,8 @@ open class RRule() {
     val byYearDay = arrayListOf<Int>()  // in +/-[1-366]
     val bySetPos = arrayListOf<Int>()  // in +/-[1-366]
 
-    constructor(rfc2445String: String) : this() {
-        val components = rfc2445String.replace("$name:", "").split(";", "=")
+    constructor(rfc5545String: String) : this() {
+        val components = rfc5545String.replace("$name:", "").split(";", "=")
         var i = 0
         while (i < components.size) {
             val component = components[i]
@@ -131,9 +131,9 @@ open class RRule() {
     }
 
     /**
-     * Transforms this RRule to a RFC2445 standard iCal String.
+     * Transforms this RRule to a RFC5545 standard iCal String.
      */
-    fun toRFC2445String(): String {
+    fun toRFC5545String(): String {
 
         val buf = StringBuilder()
         buf.append("$name:")

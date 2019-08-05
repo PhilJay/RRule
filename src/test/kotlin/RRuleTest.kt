@@ -26,7 +26,7 @@ class RRuleTest {
 
         for (ruleString in ruleStrings) {
             val rule = RRule(ruleString)
-            assertEquals(ruleString, rule.toRFC2445String())
+            assertEquals(ruleString, rule.toRFC5545String())
         }
     }
 
