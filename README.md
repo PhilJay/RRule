@@ -1,4 +1,4 @@
-[![Release](https://img.shields.io/github/release/PhilJay/rrule.svg?style=flat)](https://jitpack.io/#PhilJay/rrule)
+[![Release](https://img.shields.io/github/release/PhilJay/RRule.svg?style=flat)](https://jitpack.io/#PhilJay/RRule)
 
 
 # RRule
