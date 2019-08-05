@@ -5,6 +5,8 @@ data class WeekdayNum(
     val weekday: Weekday
 ) {
 
+    protected constructor() : this(0, Weekday.Monday)
+
     fun toICalString(): String {
         return if (number != 0)
             "$number" + weekday.initials

@@ -10,15 +10,11 @@ open class RRule() {
     private val name = "RRULE"
 
     var freq: Frequency = Frequency.Daily
-        protected set
+
     var wkst: Weekday? = null
-        protected set
     var until: Instant? = null
-        protected set
     var count = 0
-        protected set
     var interval = 0
-        protected set
 
     val byDay = arrayListOf<WeekdayNum>()
     val byMonth = arrayListOf<Int>() // in +/-[1-12]
