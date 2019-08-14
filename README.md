@@ -42,6 +42,14 @@ Transform iCalendar RFC 5545 String to RRule object:
 
 ```kotlin
 val rrule = RRule("RRULE:FREQ=MONTHLY;INTERVAL=2;COUNT=10;BYDAY=1SU,-1SU")
+
+// convenient property access
+rrule.freq 
+rrule.until
+rrule.count
+rrule.interval
+rrule.byDay
+// ...
 ```
 
 Transform RRule object to iCalendar RFC 5545 String:
